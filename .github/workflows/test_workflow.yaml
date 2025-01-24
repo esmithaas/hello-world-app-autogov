@@ -2,7 +2,5 @@ name: test workflow
 on:
   workflow_dispatch
 jobs:
-  name: test reusable workflow
-  steps:
-    - id: test_reusable
-      uses: esmithaas/reusable-workflows-autogov/.github/workflows/reusable_workflow.yaml@main
+  reusable_workflow:
+    uses: esmithaas/reusable-workflows-autogov/.github/workflows/reusable_workflow.yaml@main
